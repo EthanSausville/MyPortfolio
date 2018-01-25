@@ -1,0 +1,81 @@
+/* ================================================
+	Ethan Sausville
+	1/25/18 
+   ================================================
+   
+   
+   
+   
+   ================================================
+	Global items
+   ================================================ */
+@font-face {
+	font-family: 'BerlinSans';
+	src: url(../fonts/BerlinSans.ttf);
+}
+body {
+	font-family: BerlinSans;
+}
+.white-space {
+	height: 80px;
+}
+
+
+/* ================================================
+	Top CSS
+   ================================================ */
+#top {
+	background: url(../img/airBalloon.jpg);
+	background-position: right top;
+}
+.btn {
+	margin: 5px 2px;
+}
+
+
+/* ================================================
+	Development Skills CSS
+   ================================================ */
+#development-skills .card:hover {
+	background: #eee;
+}
+
+
+/* ================================================
+	About CSS
+   ================================================ */
+#about img {
+	border-radius: 50%;
+	width: 100%;
+	border: 5px solid #ddd;
+}
+
+
+/* ================================================
+	Program Proficiencies CSS
+   ================================================ */
+#program-prof .card:hover {
+	background: #eee;
+}
+
+
+/* ================================================
+	Project Sites CSS
+   ================================================ */
+#project-sites img {
+	border-radius: 50%;
+	width: 90%;
+	border: 5px solid #ddd;
+	margin: 10px auto;
+	transition: transform .5s;
+	transform-origin: 50% 50%;
+}
+#project-sites img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
+

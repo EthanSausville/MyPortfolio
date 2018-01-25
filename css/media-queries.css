@@ -1,0 +1,96 @@
+
+/* ================================================
+	CSS if screen is 1600px or larger
+   ================================================ */
+
+@media  (min-width:1800px) {
+	#top {
+		height: 1000px;
+		width: 100%;
+		background-size: 100% auto;
+	}
+	#top h1 {
+		font-size: 80px;
+	}
+	.header {
+		position: absolute;
+		top: 550px;
+		margin: 0 75px;
+	}
+	.button-area {
+		width: 500px;
+	}
+}
+
+/* ================================================
+	CSS if screen is between 720px and 1599px
+   ================================================ */
+
+@media  (min-width:720px) and (max-width:1799px) {
+	#top {
+		height: 1000px;
+		width: 100%;
+		background-size: auto 1000px ;
+	}
+	#top h1 {
+		font-size: 80px;
+	}
+	.header {
+		position: absolute;
+		top: 550px;
+		margin: 0 75px;
+	}
+	.button-area {
+		width: 500px;
+	}
+}
+
+/* ================================================
+	CSS if screen is between 719px and 380px 
+   ================================================ */
+
+@media  (min-width:380px) and (max-width:719px) {
+	#top {
+		height: 650px;
+		line-height: 60px;
+		width: 100%;
+		background-size: auto 650px;
+	}
+	#top h1 {
+		width: 200px;
+		font-size: 60px;
+	}
+	.header {
+		position: absolute;
+		top: 300px;
+		margin: 0 40px;
+	}
+	.button-area {
+		width: 380px;
+	}
+}
+
+/* ================================================
+	CSS if screen is 379px or less
+   ================================================ */
+
+@media (max-width:379px) {
+	#top {
+		height: 650px;
+		line-height: 60px;
+		width: 100%;
+		background-size: auto 650px;
+	}
+	#top h1 {
+		width: 200px;
+		font-size: 60px;
+	}
+	.header {
+		position: absolute;
+		top: 130px;
+		margin: 0 10px;
+	}
+	.button-area {
+		width: 150px;
+	}
+}
