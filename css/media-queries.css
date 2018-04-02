@@ -8,17 +8,10 @@
 		height: 1000px;
 		width: 100%;
 		background-size: 100% auto;
+		padding: 550px 0 0 0;
 	}
 	#top h1 {
 		font-size: 80px;
-	}
-	.header {
-		position: absolute;
-		top: 550px;
-		margin: 0 75px;
-	}
-	.button-area {
-		width: 500px;
 	}
 }
 
@@ -30,18 +23,11 @@
 	#top {
 		height: 1000px;
 		width: 100%;
-		background-size: auto 1000px ;
+		background-size: auto 1000px;
+		padding: 550px 0 0 0;
 	}
 	#top h1 {
 		font-size: 80px;
-	}
-	.header {
-		position: absolute;
-		top: 550px;
-		margin: 0 75px;
-	}
-	.button-area {
-		width: 500px;
 	}
 }
 
@@ -55,18 +41,10 @@
 		line-height: 60px;
 		width: 100%;
 		background-size: auto 650px;
+		padding: 250px 0 0 0;
 	}
 	#top h1 {
-		width: 200px;
 		font-size: 60px;
-	}
-	.header {
-		position: absolute;
-		top: 300px;
-		margin: 0 40px;
-	}
-	.button-area {
-		width: 380px;
 	}
 }
 
@@ -80,17 +58,9 @@
 		line-height: 60px;
 		width: 100%;
 		background-size: auto 650px;
+		padding: 350px 0 0 0;
 	}
 	#top h1 {
-		width: 200px;
 		font-size: 60px;
-	}
-	.header {
-		position: absolute;
-		top: 130px;
-		margin: 0 10px;
-	}
-	.button-area {
-		width: 150px;
 	}
 }

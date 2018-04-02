@@ -1,77 +1,183 @@
 /* ================================================
 	Ethan Sausville
 	1/25/18 
-   ================================================
+   ================================================*/
+
    
-   
-   
-   
-   ================================================
-	Global items
-   ================================================ */
 @font-face {
 	font-family: 'BerlinSans';
-	src: url(../fonts/BerlinSans.ttf);
+	src: url(../objects/BerlinSans.ttf);
+}
+@font-face {
+	font-family: 'Viner Hand ITC';
+	src: url(../objects/VinerHandITC.ttf);
 }
 body {
 	font-family: BerlinSans;
-}
-.white-space {
-	height: 80px;
+    word-wrap: break-word;
 }
 
 
 /* ================================================
-	Top CSS
-   ================================================ */
+	Reusable CSS
+   ================================================*/
+.font-vinerhand {
+	font-family: 'Viner Hand ITC' !important;
+} 
+.font-calibri {
+	font-family: 'Calibri' !important;
+} 
+.font-16 {
+	font-size: 16pt !important;
+} 
+.font-20 {
+	font-size: 20pt !important;
+}  
+.white-space {
+	height: 100px;
+}
+.bg-darken {
+	background: #06071B;
+	opacity: .90;
+}
+.img-round {
+	border-radius: 50%;
+}
+.img-border-light {
+	border: 5px solid #ddd;
+}
+.shadow {
+	box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.7)
+}
+.bg-main {
+	background: #184461 !important;
+}
+.text-accent {
+	color: #FFB900 !important;
+}
+.full-modal {
+	width: 100%;
+	height: 100%;
+}
+
+/* ================================================
+	Overlay
+   ================================================*/
+
+.anti-scroll {
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+	background: #002137;
+	opacity: .99;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #FFB900;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* ================================================
+	Targetted CSS
+   ================================================*/
 #top {
-	background: url(../img/airBalloon.jpg);
+	background: url(../objects/airBalloon.jpg);
 	background-position: right top;
 }
-.btn {
-	margin: 5px 2px;
-}
-
-
-/* ================================================
-	Development Skills CSS
-   ================================================ */
-#development-skills .card:hover {
-	background: #eee;
-}
-
-
-/* ================================================
-	About CSS
-   ================================================ */
 #about img {
-	border-radius: 50%;
 	width: 100%;
-	border: 5px solid #ddd;
 }
-
-
-/* ================================================
-	Program Proficiencies CSS
-   ================================================ */
-#program-prof .card:hover {
-	background: #eee;
+#technical-skills img, #soft-skills img {
+	max-width: 250px;
+	margin: auto;
 }
-
-
-/* ================================================
-	Project Sites CSS
-   ================================================ */
-#project-sites img {
-	border-radius: 50%;
+#portfolio img {
 	width: 90%;
-	border: 5px solid #ddd;
 	margin: 10px auto;
 	transition: transform .5s;
 	transform-origin: 50% 50%;
+	max-width: 250px;
 }
-#project-sites img:hover {
+#portfolio img:hover {
 	transform: scale(1.1);
+}
+#portfolio p {
+	max-width: 500px;
+	margin: auto;
+}
+#soft-skills {
+	max-width: 850px;
+}
+#linkedInFooter {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	background: url(../objects/linkedIn.png);
+}
+ul {
+	padding: 0 0 0 18px;
+}
+hr.hr-light {
+	border-color: #fff;
+}
+hr.hr-fancy {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.hr-fancy:after {
+    content: "\00A7";
+    display: inline-block;
+    position: relative;
+    top: -.85em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 
