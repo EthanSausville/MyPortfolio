@@ -16,6 +16,9 @@ body {
 	font-family: BerlinSans;
     word-wrap: break-word;
 }
+a {
+	cursor: pointer;
+}
 
 
 /* ================================================
@@ -76,13 +79,22 @@ body {
     z-index: 1050;
     top: 0;
     left: 0;
-	background: #002137;
-	opacity: .99;
+	background: #184461;
+	opacity: .97;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
-.overlay-content {
+#If-Kipling .overlay-content {
+    position: relative;
+    top: 5%;
+    width: 400px;
+    margin: 30px auto;
+}
+
+#Other-Projects .overlay-content, 
+#DawnGuardGames .overlay-content,
+#Live-Project .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
